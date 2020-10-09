@@ -3,17 +3,19 @@ package model;
 import processing.core.PApplet;
 
 public abstract class Figure extends PApplet{
-	private int x;
-	private int y;
+	protected int x;
+	protected int y;
+	protected float change;
 	PApplet app;
 
-	public Figure(int x, int y, PApplet app) {
+	public Figure(int x, int y, float change, PApplet app) {
 		this.x = x;
 		this.y = y;
 		this.app = app;
+		this.change = change;
 	}
 
-	protected abstract void paintObject();
+	protected abstract void paintObject(int x, int y, float change);
 
 	public int getX() {
 		return x;

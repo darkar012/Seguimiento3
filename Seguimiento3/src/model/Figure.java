@@ -32,6 +32,6 @@ public abstract class Figure extends PApplet{
 	public void setY(int y) {
 		this.y = y;
 	}
-	
-	
+
+
 }

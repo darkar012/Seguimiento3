@@ -11,6 +11,6 @@ public class CircleButton extends Button{
 
 	protected void PaintButton() {
 		app.image(button, 0, 0);
-		
+
 	}
 }

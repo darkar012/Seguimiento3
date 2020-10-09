@@ -9,6 +9,7 @@ public class Square extends Figure implements Rotatable{
 	}
 
 	protected void paintObject(int x, int y, float change) {
+		app.rect(x, y, change, change);
 		/*twist(450, 400, 0, 12, change);
 		if(change >= 1) {
 			change *= 0.75f;
@@ -21,10 +22,10 @@ public class Square extends Figure implements Rotatable{
 		app.rectMode(CENTER);
         if(count%2==0) {
         app.rotate(PI/rot);
-        app.rect(x, y, change, change);
+        paintObject(x, y, change);
         app.rotate(PI/-rot);        
            }else {
-        app.rect(x, y, change, change);
+        paintObject(x, y, change);
      }
         count= count+1;
         
